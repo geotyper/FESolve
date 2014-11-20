@@ -3,6 +3,8 @@ FESolve
 
 Limited 2D Finite Element Method Solver, developed to complete a University course Finite Element numerical methods assignment.
 
+![](https://raw.githubusercontent.com/sleutho/FESolve/master/Example_Runs/Bridge/balkon_dreieck_III.png)
+
 ##Usage:
 ```
 FESolve input.FEM output.txt
