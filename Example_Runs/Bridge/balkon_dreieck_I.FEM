@@ -1,0 +1,88 @@
+---DIALOG-V1----------------------------------------------------------
+* Eingabespiegel o=nein / 1=ja (in Datei Standard.Ptk)
+* Transferinformationen
+* Elementmatrizen
+* Gleichungssystem
+ 0 0 0 0
+---TITEL-V1-----------------------------------------------------------
+ 
+---MODELL-V1----------------------------------------------------------
+* globale Freiheitsgrade
+*  x  y  z  xx yy zz
+   1  1  0  0  0  1
+---MATERIAL-V2--------------------------------------------------------
+*                                                     Wärmeaus-
+*                             Sigma zulässig          dehnungs-     spezifische...............
+*  Nr E-Modul     Nue         Zug         Druck       koeffizient   Gewichtskraft  Massenkraft  Name
+    1 2.1000e+007 3.0000e-001 2.1800e+004 2.1800e+004 1.2000e-005   7.7008e-002    7.8500e-003  St 37 [cm] [N]
+---FEDERKENNWERTE-V1--------------------------------------------------
+*  Nr Steifigkeit    Dämpfung      Name
+    1 1.0000e+000    1.0000e+000   ohne Bezeichnung
+---GEOMETRIE-V2-------------------------------------------------------
+*      Fläche                                 Trägheitsmomente                       Widerstandsmomente                    geometrische Abmessungen
+*  Nr  Fx           Fy           Fz           Ixx          Iyy          Izz          Wxx          Wyy          Wzz         Typ  h            b            d            s            t            Name
+    1  1.0000e+000  1.0000e+000  1.0000e+000  1.0000e+000  1.0000e+000  1.0000e+000  1.0000e+000  1.0000e+000  1.0000e+000   0  1.0000e+000  1.0000e+000  1.0000e+000  1.0000e+000  1.0000e+000  ohne Bezeichnung
+---GERADE-V1----------------------------------------------------------
+*  Nr Segmente invers  x1           y1           z1           x2           y2           z2
+    1      4     1     0.0000e+000  0.0000e+000  0.0000e+000  1.0000e+000  0.0000e+000  0.0000e+000
+    2      2     1     1.0000e+000  0.0000e+000  0.0000e+000  1.0000e+000 -2.0000e-001  0.0000e+000
+    3      3     0     0.0000e+000  0.0000e+000  0.0000e+000  0.0000e+000 -5.0330e-001  0.0000e+000
+---KREIS-V1-----------------------------------------------------------
+*  NR Segmente invers  xm           ym           zm           r            alfa1        alfa2        wz           wx           wy
+    1      4     1     1.0000e+000 -2.0000e+000  0.0000e+000  1.8000e+000  9.0000e+001  1.2375e+002  0.0000e+000  0.0000e+000  0.0000e+000
+---KNOTEN-V1----------------------------------------------------------
+*                                                               Last-Zeitfunktion in 2. Zeile falls vorhanden
+*      Koordinaten                            Lager             Lasten                                 Momente                                Verschiebungen, eingeprägte            Verdrehungen, eingeprägte              Einzel-      Dreh-
+*  Nr  x            y            z            R_x_y_z_xx_yy_zz  x            y            z            x            y            z            x            y            z            x            y            z            Masse        Masse x      Masse y      Masse z
+    1  1.0000e+000  0.0000e+000  0.0000e+000    0 0 0  0  0  0  0.0000e+000 -4.0000e+002  0.0000e+000
+    2  1.0000e+000 -2.0000e-001  0.0000e+000
+    3  0.0000e+000  0.0000e+000  0.0000e+000    1 1 0  0  0  0  0.0000e+000 -4.0000e+002  0.0000e+000
+    4 -2.6419e-005 -5.0335e-001  0.0000e+000    1 1 0  0  0  0
+    5  7.5000e-001  0.0000e+000  0.0000e+000    0 0 0  0  0  0  0.0000e+000 -4.0000e+002  0.0000e+000
+    6  5.0000e-001  0.0000e+000  0.0000e+000    0 0 0  0  0  0  0.0000e+000 -4.0000e+002  0.0000e+000
+    7  2.5000e-001  0.0000e+000  0.0000e+000    0 0 0  0  0  0  0.0000e+000 -4.0000e+002  0.0000e+000
+    8  1.0000e+000 -1.0000e-001  0.0000e+000
+    9  0.0000e+000 -1.6777e-001  0.0000e+000    1 1 0  0  0  0
+   10  0.0000e+000 -3.3553e-001  0.0000e+000    1 1 0  0  0  0
+   11  2.3040e-001 -3.7282e-001  0.0000e+000
+   12  4.7749e-001 -2.7751e-001  0.0000e+000
+   13  7.3589e-001 -2.1948e-001  0.0000e+000
+   14  1.9051e-001 -1.8945e-001  0.0000e+000
+   15  8.6950e-001 -1.0586e-001  0.0000e+000
+---ELEMENTE-2D-V1-----------------------------------------------------
+*
+*  Element-Typ = ...1 ==> Scheibe, ebener Spannungszustand
+*  Element-Typ = ...2 ==> Scheibe, ebener Verzerrungszustand
+*  Element-Typ = ...3 ==> Ringelement
+*  Element-Typ = ..10 ==> Platte, DKT Element
+*  Element-Typ = ..11 ==> Platte und Scheibe
+*  Element-Typ = ..20 ==> Schale
+*  Element-Typ = .k.. ==> k Knoten / Element
+*  Element-Typ = 3... ==> Dreieck-Element
+*  Element-Typ = 4... ==> Viereck-Element
+*
+*  Last-Typ = x0 ==> Lastrichtung im  lokalen Koordinatensystem
+*  Last-Typ = x1 ==> Lastrichtung im globalen Koordinatensystem
+*  Last-Typ = 0x ==> Wirkfläche = Elementfläche
+*  Last-Typ = 1x ==> Wirkfläche = Projektion der Elementfläche
+*  Nur die Kombinationen 00, 10 und 11 sind zulässig!
+*
+*       Element                                          Last                                                    Zeit-Faktor
+*   Nr  Typ     k1    k2    k3    k4   mat  Dicke        Typ  p_x          p_y          p_z         delta_t      Kurve
+*               k5    k6    k7    k8
+     1  3301    13     2    15           1  2.0000e+000
+     2  3301    13    15     5           1  2.0000e+000
+     3  3301    13     5     6           1  2.0000e+000
+     4  3301    13     6    12           1  2.0000e+000
+     5  3301    12     6     7           1  2.0000e+000
+     6  3301    12     7    14           1  2.0000e+000
+     7  3301    12    14    11           1  2.0000e+000
+     8  3301    11    14    10           1  2.0000e+000
+     9  3301    11    10     4           1  2.0000e+000
+    10  3301    10    14     9           1  2.0000e+000
+    11  3301     9    14     3           1  2.0000e+000
+    12  3301     3    14     7           1  2.0000e+000
+    13  3301     5    15     1           1  2.0000e+000
+    14  3301     1    15     8           1  2.0000e+000
+    15  3301     8    15     2           1  2.0000e+000
+---ENDE---------------------------------------------------------------
