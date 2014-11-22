@@ -5,15 +5,7 @@
 * Gleichungssystem
  0 0 0 0
 ---TITEL-V1-----------------------------------------------------------
- Autor:	Sascha Leuthold
- Datum:	27. 4.2005
- Zeit:	15.17. 0
- Längeneinheiten in:	cm
- Krafteinheiten in:		kN
-
-Verschiebung: 0.1019
-
-Gleichung: 93
+ Scheibe
 ---MATERIAL-V2--------------------------------------------------------
 *                                                     Wärmeaus-
 *                             Sigma zulässig          dehnungs-     spezifische...............
