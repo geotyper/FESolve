@@ -1,4 +1,4 @@
-// FESolve.cpp : Definiert den Einsprungpunkt für die Konsolenanwendung.
+// FESolve.cpp : Definiert den Einsprungpunkt fï¿½r die Konsolenanwendung.
 //
 
 #include "stdafx.h"
@@ -27,8 +27,8 @@ int main(int argc, char* argv[])
 				goto stdoutput;
 			}
 			
-			fout << "################# FESOLVE #################" << std::endl;
-			fout << "#	Sascha Leuthold						    " << std::endl << std::endl;
+			fout << "################# FESOLVE #################";
+			fout << std::endl << std::endl << std::endl;
 			
 			solver.PrintData(fout);
 			solver.PrintElementStiffnessMatrix(fout);
@@ -40,7 +40,7 @@ int main(int argc, char* argv[])
 		} else {
 stdoutput:
 			std::cout << "################# FESOLVE #################" << std::endl;
-			std::cout << "#	Sascha Leuthold							 " << std::endl << std::endl;
+			std::cout << std::endl << std::endl << std::endl;
 			
 			solver.PrintData(std::cout);
 			solver.PrintElementStiffnessMatrix(std::cout);
